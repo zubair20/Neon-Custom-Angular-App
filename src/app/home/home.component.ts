@@ -80,7 +80,7 @@ export class HomeComponent {
       if(e.target.value){
         this.neonText = e.target.value;
       }else{
-        this.neonText = "My Text";
+        this.neonText = "Your Text";
       }
       
     } catch(e) {
