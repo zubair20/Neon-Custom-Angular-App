@@ -1,1 +1,32 @@
-<p>home works!</p>
+<div class="container" >
+  <div class="product">
+    <div class="product__preview" id="container">
+      <div class="product__background">
+        <img src="{{selectedBackground}}" alt="" class="product__image">
+      </div>
+      <p class="product__neontext {{selectedColor}}" [ngStyle]="{'font-family': selectedFont}">{{neonText}}</p>
+    </div>
+    <div class="product__info"> 
+      <h1 class="product__title">Custom Led Neon Sign</h1>
+      <p class="product__textarea__label">Write Your Custom Text To Design (Max 25 Characters)</p>
+      <textarea name="" rows="3" (keyup)="changeNeonText($event)">{{neonText}}</textarea>
+      <p class="product__previewbg__label">Select Preview Background</p>
+      <div class="product__backgrounds">
+        <div *ngFor="let background of backgrounds; let i=index;" class="product__bg" [ngClass]="{'active': background.bg == selectedBackground}" title="title">
+          <img src="{{background.bg}}" alt="" class="product__bgimage" width="80" height="80" (click)="changeBg(i)">
+        </div>
+      </div>
+      <p class="product__font__label">Choose Font</p>
+      <div class="product__fonts">
+        <div *ngFor="let font of fonts; let i=index;" class="product__font" [ngClass]="{'active': font.name == selectedFont}" (click)="changeFont(i)">
+          <p [ngStyle]="{'font-family': font.name}">{{font.name}}</p>
+        </div>
+      </div>
+      <p class="product__color__label">Choose Color</p>
+      <div class="product__colors">
+        <div *ngFor="let color of colors; let i=index;" class="product__color" [ngStyle]="{'background': color.class}" [ngClass]="{'active': color.class == selectedColor}" (click)="changeColor(i)"></div>
+      </div>
+      <button class="my-button" (click)="downloadAsPNG()">Download as PNG</button>
+    </div>
+  </div>
+</div>
