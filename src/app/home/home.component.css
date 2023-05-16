@@ -344,7 +344,7 @@ textarea {
 }
 
 /* Styles for large screens */
-@media (min-width: 992px) {
+@media (min-width: 992px) and (max-width: 1199px) {
   /* Responsive styles for large screens */
   .container {
     width: 90%;
@@ -355,18 +355,8 @@ textarea {
   }
   .product__info{
     margin-left: 60px;
-    height: auto;
+    height: 70vh;
   }
 }
 
-/* Styles for extra-large screens */
-@media (min-width: 1200px) {
-  /* Responsive styles for extra-large screens */
-  .container {
-    width: 80%;
-    /* background-color: yellow; */
-  }
-  .product__preview{
-    flex: 2;
-  }
-}
+
