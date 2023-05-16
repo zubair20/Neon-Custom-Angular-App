@@ -106,3 +106,17 @@ h6 {
 #__next {
   isolation: isolate;
 }
+
+:root {
+  --color-white: rgb(255, 255, 255);
+  --color-red: rgb(255, 0, 0);
+  --color-green: rgb(0, 255, 0);
+  --color-blue: rgb(0, 0, 255);
+  --color-skyblue: rgb(135, 206, 250);
+  --color-purple: rgb(128,0,128);
+  --color-orange: rgb(255, 165, 0);
+  --color-yellow: rgb(255, 255, 0);
+  --color-pink: rgb(255, 192, 203);
+  --color-lemonyellow: rgb(255, 247, 0);
+  --color-goldenyellow: rgb(255, 223, 0);
+}

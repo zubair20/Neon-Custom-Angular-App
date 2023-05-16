@@ -1,8 +1,10 @@
+<app-header></app-header>
+
 <div class="container" >
   <div class="product">
     <div class="product__preview" id="container">
       <div class="product__background">
-        <img src="{{selectedBackground}}" alt="" class="product__image">
+        <img src="{{selectedBackground}}" alt="" class="product__image" >
       </div>
       <p class="product__neontext {{selectedColor}}" [ngStyle]="{'font-family': selectedFont}">{{neonText}}</p>
     </div>
@@ -24,9 +26,11 @@
       </div>
       <p class="product__color__label">Choose Color</p>
       <div class="product__colors">
-        <div *ngFor="let color of colors; let i=index;" class="product__color" [ngStyle]="{'background': color.class}" [ngClass]="{'active': color.class == selectedColor}" (click)="changeColor(i)"></div>
+        <div *ngFor="let color of colors; let i=index;" class="product__color {{color.class}}" [ngClass]="{'active': color.class == selectedColor}" (click)="changeColor(i)"></div>
       </div>
       <button class="my-button" (click)="downloadAsPNG()">Download as PNG</button>
     </div>
   </div>
 </div>
+
+<app-footer></app-footer>

@@ -58,13 +58,34 @@ export class HomeComponent {
   ];
   colors = [
     {
-      class: "orange"
+      class: "purple"
+    },
+    {
+      class: "red"
     },
     {
       class: "white"
     },
     {
-      class: "yellow"
+      class: "lemonyellow"
+    },
+    {
+      class: "orange"
+    },
+    {
+      class: "pink"
+    },
+    {
+      class: "blue"
+    },
+    {
+      class: "skyblue"
+    },
+    {
+      class: "green"
+    },
+    {
+      class: "goldenyellow"
     }
   ];
   selectedBackground = this.backgrounds[0].bg;

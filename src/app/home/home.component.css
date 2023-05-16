@@ -1,3 +1,5 @@
+
+
 .container {
   width: 70%;
   margin: auto;
@@ -29,45 +31,109 @@
   font-family: Neonscript;
   font-variant-ligatures: no-common-ligatures;
   font-size: 62px;
-  /* white-space: nowrap; */
+  white-space: nowrap;
   line-height: 100%;
   color: white;
 
 }
+.product__neontext.purple{
+  text-shadow: rgb(255, 255, 255) 0px 0px 5px,
+      rgb(255, 255, 255) 0px 0px 10px,
+      var(--color-purple) 0px 0px 20px,
+      var(--color-purple) 0px 0px 30px,
+      var(--color-purple) 0px 0px 40px,
+      var(--color-purple) 0px 0px 55px,
+      var(--color-purple) 0px 0px 75px;
+}
 .product__neontext.orange{
   text-shadow: rgb(255, 255, 255) 0px 0px 5px,
       rgb(255, 255, 255) 0px 0px 10px,
-      rgb(255, 165, 0) 0px 0px 20px,
-      rgb(255, 165, 0) 0px 0px 30px,
-      rgb(255, 165, 0) 0px 0px 40px,
-      rgb(255, 165, 0) 0px 0px 55px;
+      var(--color-orange) 0px 0px 20px,
+      var(--color-orange) 0px 0px 30px,
+      var(--color-orange) 0px 0px 40px,
+      var(--color-orange) 0px 0px 55px,
+      var(--color-orange) 0px 0px 75px;
 }
-.product__neontext.white {
+.product__neontext.yellow{
   text-shadow: rgb(255, 255, 255) 0px 0px 5px,
-    rgb(255, 255, 255) 0px 0px 10px,
-    rgb(255, 255, 255) 0px 0px 20px,
-    rgb(255, 255, 255) 0px 0px 30px,
-    rgb(255, 255, 255) 0px 0px 40px,
-    rgb(255, 255, 255) 0px 0px 55px,
-    rgb(255, 255, 255) 0px 0px 75px;
+      rgb(255, 255, 255) 0px 0px 10px,
+      var(--color-yellow) 0px 0px 20px,
+      var(--color-yellow) 0px 0px 30px,
+      var(--color-yellow) 0px 0px 40px,
+      var(--color-yellow) 0px 0px 55px,
+      var(--color-yellow) 0px 0px 75px;
 }
-.product__neontext.yellow {
+.product__neontext.red{
   text-shadow: rgb(255, 255, 255) 0px 0px 5px,
-    rgb(255, 255, 255) 0px 0px 10px,
-    rgb(255, 255, 0) 0px 0px 20px,
-    rgb(255, 255, 0) 0px 0px 30px,
-    rgb(255, 255, 0) 0px 0px 40px,
-    rgb(255, 255, 0) 0px 0px 55px,
-    rgb(255, 255, 0) 0px 0px 75px;
+      rgb(255, 255, 255) 0px 0px 10px,
+      var(--color-red) 0px 0px 20px,
+      var(--color-red) 0px 0px 30px,
+      var(--color-red) 0px 0px 40px,
+      var(--color-red) 0px 0px 55px,
+      var(--color-red) 0px 0px 75px;
 }
-.product__neontext.orangeg {
+.product__neontext.green{
   text-shadow: rgb(255, 255, 255) 0px 0px 5px,
-    rgb(255, 255, 255) 0px 0px 10px,
-    rgb(255, 144, 255) 0px 0px 20px,
-    rgb(255, 144, 255) 0px 0px 30px,
-    rgb(255, 144, 255) 0px 0px 40px,
-    rgb(255, 144, 255) 0px 0px 55px,
-    rgb(255, 144, 255) 0px 0px 75px;
+      rgb(255, 255, 255) 0px 0px 10px,
+      var(--color-green) 0px 0px 20px,
+      var(--color-green) 0px 0px 30px,
+      var(--color-green) 0px 0px 40px,
+      var(--color-green) 0px 0px 55px,
+      var(--color-green) 0px 0px 75px;
+}
+.product__neontext.blue{
+  text-shadow: rgb(255, 255, 255) 0px 0px 5px,
+      rgb(255, 255, 255) 0px 0px 10px,
+      var(--color-blue) 0px 0px 20px,
+      var(--color-blue) 0px 0px 30px,
+      var(--color-blue) 0px 0px 40px,
+      var(--color-blue) 0px 0px 55px,
+      var(--color-blue) 0px 0px 75px;
+}
+.product__neontext.skyblue{
+  text-shadow: rgb(255, 255, 255) 0px 0px 5px,
+      rgb(255, 255, 255) 0px 0px 10px,
+      var(--color-skyblue) 0px 0px 20px,
+      var(--color-skyblue) 0px 0px 30px,
+      var(--color-skyblue) 0px 0px 40px,
+      var(--color-skyblue) 0px 0px 55px,
+      var(--color-skyblue) 0px 0px 75px;
+}
+.product__neontext.lemonyellow{
+  text-shadow: rgb(255, 255, 255) 0px 0px 5px,
+      rgb(255, 255, 255) 0px 0px 10px,
+      var(--color-lemonyellow) 0px 0px 20px,
+      var(--color-lemonyellow) 0px 0px 30px,
+      var(--color-lemonyellow) 0px 0px 40px,
+      var(--color-lemonyellow) 0px 0px 55px,
+      var(--color-lemonyellow) 0px 0px 75px;
+}
+.product__neontext.goldenyellow{
+  text-shadow: rgb(255, 255, 255) 0px 0px 5px,
+      rgb(255, 255, 255) 0px 0px 10px,
+      var(--color-goldenyellow) 0px 0px 20px,
+      var(--color-goldenyellow) 0px 0px 30px,
+      var(--color-goldenyellow) 0px 0px 40px,
+      var(--color-goldenyellow) 0px 0px 55px,
+      var(--color-goldenyellow) 0px 0px 75px;
+}
+.product__neontext.pink{
+  text-shadow: rgb(255, 255, 255) 0px 0px 5px,
+      rgb(255, 255, 255) 0px 0px 10px,
+      var(--color-pink) 0px 0px 20px,
+      var(--color-pink) 0px 0px 30px,
+      var(--color-pink) 0px 0px 40px,
+      var(--color-pink) 0px 0px 55px,
+      var(--color-pink) 0px 0px 75px;
+}
+.product__neontext.white{
+  text-shadow: rgb(255, 255, 255) 0px 0px 5px,
+      rgb(255, 255, 255) 0px 0px 10px,
+      var(--color-white) 0px 0px 20px,
+      var(--color-white) 0px 0px 30px,
+      var(--color-white) 0px 0px 40px,
+      var(--color-white) 0px 0px 55px,
+      var(--color-white) 0px 0px 75px;
 }
 .product__info{
   flex: 1;
@@ -171,22 +237,37 @@ textarea {
 }
 
 .product__colors .orange{
-  background-color: rgb(255, 165, 0);
+  background-color:  var(--color-orange);
 }
 .product__colors .white {
-  background-color: rgb(255, 255, 255);
+  background-color:  var(--color-white);
 }
 .product__colors .yellow {
-  background-color: rgb(255, 255, 0);
+  background-color:  var(--color-yellow);
 }
 .product__colors .red {
-  background-color: rgb(255, 0, 0);
+  background-color:  var(--color-red);
 }
 .product__colors .blue {
-  background-color: rgb(0, 0, 255);
+  background-color:  var(--color-blue);
 }
 .product__colors .green {
-  background-color: rgb(0, 255, 0);
+  background-color:  var(--color-green);
+}
+.product__colors .purple {
+  background-color:  var(--color-purple);
+}
+.product__colors .lemonyellow {
+  background-color:  var(--color-lemonyellow);
+}
+.product__colors .pink {
+  background-color:  var(--color-pink);
+}
+.product__colors .skyblue {
+  background-color:  var(--color-skyblue);
+}
+.product__colors .goldenyellow {
+  background-color:  var(--color-goldenyellow);
 }
 
 .product__color.active {
@@ -224,4 +305,68 @@ textarea {
   background-color: #3e8e41;
   color: white;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* Default styles */
+
+/* Styles for small screens */
+@media (max-width: 767px) {
+  /* Responsive styles for small screens */
+  .container {
+    width: 90%;
+    /* background-color: red; */
+  }
+  .product {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .product__info{
+    margin-left: auto;
+    height: auto;
+  }
+}
+
+/* Styles for medium screens */
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Responsive styles for medium screens */
+  .container {
+    width: 80%;
+    /* background-color: green; */
+  }
+  .product {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .product__info{
+    margin-left: auto;
+    height: auto;
+  }
+}
+
+/* Styles for large screens */
+@media (min-width: 992px) {
+  /* Responsive styles for large screens */
+  .container {
+    width: 90%;
+    /* background-color: blue; */
+  } 
+  .product__preview{
+    flex: 1;
+  }
+  .product__info{
+    margin-left: 60px;
+    height: auto;
+  }
+}
+
+/* Styles for extra-large screens */
+@media (min-width: 1200px) {
+  /* Responsive styles for extra-large screens */
+  .container {
+    width: 80%;
+    /* background-color: yellow; */
+  }
+  .product__preview{
+    flex: 2;
+  }
 }
