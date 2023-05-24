@@ -28,7 +28,14 @@
       <div class="product__colors">
         <div *ngFor="let color of colors; let i=index;" class="product__color {{color.class}}" [ngClass]="{'active': color.class == selectedColor}" (click)="changeColor(i)"></div>
       </div>
+      <p class="product__size__label">Choose Size</p>
+      <div class="product__sizes">
+        <div *ngFor="let size of sizes; let i=index;" class="product__size" [ngClass]="{'active': size.name == selectedSize}" (click)="changeSize(i)">
+          <p >{{ size.name}}</p>
+        </div>
+      </div>
       <button class="my-button" (click)="downloadAsPNG()">Download as PNG</button>
+      <button class="whatsapp-button" (click)="sendWhatsAppMessage()">Buy on Whatsapp</button>
     </div>
   </div>
 </div>

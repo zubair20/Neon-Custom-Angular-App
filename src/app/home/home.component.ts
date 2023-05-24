@@ -9,6 +9,9 @@ declare function abc(): void;
 })
 export class HomeComponent {
 
+  phoneNumber: string = '+923056000250';  
+  message: string = 'Hi this is zubair';  // The message content
+
   neonText = "Your Text";
   backgrounds = [
     {
@@ -88,9 +91,25 @@ export class HomeComponent {
       class: "goldenyellow"
     }
   ];
+  
+  sizes = [
+    {
+      name: "Small (Length:70 CM) ( Max 8 Characters )"
+    },
+    {
+      name: "Medium (Length:90 CM) ( Max 10 Characters )"
+    },
+    {
+      name: "Large (Length:120 CM) ( Max 12 Characters )"
+    },
+    {
+      name: "X Large (Length:140 CM) ( Max 16 Characters )"
+    }
+  ];
   selectedBackground = this.backgrounds[0].bg;
   selectedFont = this.fonts[0].name;
   selectedColor = this.colors[0].class;
+  selectedSize = this.sizes[0].name;
   
   constructor(){
   }
@@ -118,6 +137,9 @@ export class HomeComponent {
   changeColor(i:number){
     this.selectedColor = this.colors[i].class;
   }
+  changeSize(i:number){
+    this.selectedSize = this.sizes[i].name;
+  }
 
   downloadAsPNG() {
     const container = document.getElementById('container');
@@ -129,6 +151,12 @@ export class HomeComponent {
         link.click();
       });
     }
+  }
+
+  sendWhatsAppMessage() {
+
+    const whatsappUrl = `https://api.whatsapp.com/send?phone=${this.phoneNumber}&text=${this.message}`;
+    window.open(whatsappUrl, '_blank');
   }
 
 }
