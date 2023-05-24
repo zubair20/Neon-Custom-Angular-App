@@ -151,7 +151,7 @@ export class HomeComponent {
   }
 
   sendWhatsAppMessage() {
-    const phoneNumber: string = '+923056000250';  
+    const phoneNumber: string = '+923151031378';  
     const message: string = 'Hi,\nHere are my details for custom neon.\n\nText: '+this.neonText+ ' \nFont: '+ this.selectedFont + ' \nSize: '+ this.selectedSize;
     const encodedMessage = encodeURIComponent(message);
     const whatsappUrl = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodedMessage}`;
