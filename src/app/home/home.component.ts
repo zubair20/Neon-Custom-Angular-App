@@ -9,9 +9,6 @@ declare function abc(): void;
 })
 export class HomeComponent {
 
-  phoneNumber: string = '+923056000250';  
-  message: string = 'Hi this is zubair';  // The message content
-
   neonText = "Your Text";
   backgrounds = [
     {
@@ -154,8 +151,10 @@ export class HomeComponent {
   }
 
   sendWhatsAppMessage() {
-
-    const whatsappUrl = `https://api.whatsapp.com/send?phone=${this.phoneNumber}&text=${this.message}`;
+    const phoneNumber: string = '+923056000250';  
+    const message: string = 'Hi,\nHere are my details for custom neon.\n\nText: '+this.neonText+ ' \nFont: '+ this.selectedFont + ' \nSize: '+ this.selectedSize;
+    const encodedMessage = encodeURIComponent(message);
+    const whatsappUrl = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodedMessage}`;
     window.open(whatsappUrl, '_blank');
   }
 
